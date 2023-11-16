@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jardín de Orquídeas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Registro para el Jardín Fan de las Orquídeas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <style>
+        .section-padding {
+            padding-bottom: 20px;
+        }
+    </style>
+
+
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f472b6;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #f472b6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #f472b6;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        body {
+            background-color: #fce7f3;
+        }
+
+        .header-bar {
+            background-color: #f472b6;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-bar">
+  <button class="openbtn" onclick="openNav()">☰ Más información</button>  
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Acerca de</a>
+  <a href="#">Clientes</a>
+  <a href="#">Contacto</a>
+</div>
+
+<div id="main">
+  <!-- Contenido principal de la página -->
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+
+<!--Primera sección-->
+<style>
+    .img-left {
+    float: left;
+    border-radius: 15px;
+}
+
+</style>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>El Maravilloso Mundo de las Orquídeas</h1>
+                <h2>Conociendo las Orquídeas</h2>
+                <p>Las orquídeas son una de las familias de plantas más grandes y diversas del mundo, con más de 25,000 especies conocidas. Se encuentran en casi todos los rincones del planeta, desde los trópicos húmedos hasta las tundras árticas. Las orquídeas son famosas por la belleza y variedad de sus flores, que pueden variar enormemente en tamaño, forma y color. Algunas orquídeas tienen flores que se asemejan a otros organismos, como insectos o aves, y utilizan estas similitudes para atraer a los polinizadores. A pesar de su aparente delicadeza, las orquídeas son en realidad bastante resistentes y algunas pueden sobrevivir en condiciones extremas. Sin embargo, muchas especies de orquídeas están amenazadas por la pérdida de hábitat y la recolección excesiva.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/IMG/IMG1.jpg" class="img-fluid img-left" alt="Imagen descriptiva">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Segunda sección-->
+
+<style>
+    .section-padding {
+        padding: 20px;
+    }
+
+    .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-light {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+</style>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <!-- Primera carta -->
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3" style="background-color: #ec4899 !important;">
+                    <div class="card-header">Orquídea Phalaenopsis</div>
+                    <div class="card-body">
+                        <img src="/IMG/IMG2.jfif" class="card-img-top" alt="Imagen descriptiva">
+                        
+                        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">Saber más</button>
+                        <div class="collapse" id="collapse1">
+                            <div class="card card-body text-dark">Originaria de Asia, la Phalaenopsis prospera en un ambiente cálido y húmedo y puede florecer durante varios meses al año.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda carta -->
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3" style="background-color: #ec4899 !important;">
+                    <div class="card-header">Orquídea Cattleya</div>
+                    <div class="card-body">
+                        <img src="/IMG/IMG3.jpg" class="card-img-top" alt="Imagen descriptiva">
+                   
+                        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">Saber más</button>
+                        <div class="collapse" id="collapse2">
+                            <div class="card card-body text-dark">Las Cattleyas son originarias de América del Sur y prefieren un ambiente cálido y luminoso. Sus flores pueden durar hasta seis semanas.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercera carta -->
+            <div class="col-md-4">
+                <div class="card text-white bg-primary mb-3" style="background-color: #ec4899 !important;">
+                    <div class="card-header">Orquídea Dendrobium</div>
+                    <div class="card-body">
+                        <img src="/IMG/IMG4.jfif" class="card-img-top" alt="Imagen descriptiva">
+                        
+                        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">Saber más</button>
+                        <div class="collapse" id="collapse3">
+                            <div class="card card-body text-dark">Estas orquídeas son nativas de Asia y Australia, y son conocidas por sus tallos largos y las muchas flores que producen.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Tercera sección-->
+
+    <section class="section-padding" style="background-color: #ec4899;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <h2 class="text-white text-center">Registro para el Jardín Fan de las Orquídeas</h2>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="nameInput" class="text-white">Nombre</label>
+                            <input type="text" class="form-control" id="nameInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput" class="text-white">Correo electrónico</label>
+                            <input type="email" class="form-control" id="emailInput" required>
+                        </div>
+                        <button type="submit" class="btn" style="background-color: #fbcfe8; color: white;">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Muestra el mensaje de agradecimiento
+            alert('¡Gracias por registrarte!');
+            // Limpia los campos del formulario
+            document.getElementById('nameInput').value = '';
+            document.getElementById('emailInput').value = '';
+        });
+    </script>
+
+
+<!--Cuarta seccion-->
+<section style="background-color: #9d174d; color: white; padding: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">La Historia de las Orquídeas</h2>
+                <p class="lead text-center" id="orchidHistory">
+                    Las orquídeas tienen una rica y fascinante historia. Su existencia se remonta a la época de los dinosaurios, hace más de 100 millones de años. A lo largo de los siglos, estas hermosas flores han cautivado a personas de todas las culturas y orígenes. En la antigua Grecia, se creía que las orquídeas tenían poderes afrodisíacos. En la época victoriana, la recolección y el cultivo de orquídeas se convirtieron en una obsesión para muchos, lo que llevó a la llamada "fiebre de las orquídeas". Hoy en día, las orquídeas son apreciadas por su belleza excepcional y su diversidad asombrosa, con más de 25,000 especies conocidas en todo el mundo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Animación para el párrafo
+    var text = document.getElementById('orchidHistory');
+    var words = text.innerText.split(' ');
+    text.innerHTML = '';
+    words.forEach(function(word, i) {
+        var span = document.createElement('span');
+        span.innerText = word + ' ';
+        span.style.opacity = 0;
+        text.appendChild(span);
+
+        setTimeout(function() {
+            span.style.opacity = 1;
+            span.style.transition = 'opacity 0.3s ease-in-out';
+        }, 100 * i);
+    });
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+
+  <style>
+    .my-carousel-section {
+      height: 20px; /* Ajusta este valor según tus necesidades */
+    }
+    .carousel-item {
+      background: linear-gradient(to right, #fce7f3, #ec4899, #500724);
+    }
+    .carousel-item img {
+      border-radius: 50%;
+      width: 90px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+      height: 90px; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+      float: right;
+      object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+    }
+    .carousel-item .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 200px; /* Ajusta este valor según tus necesidades */
+    }
+    .bg-dark {
+      background-color: #f472b6 !important;
+    }
+  </style>
+
+  <!-- El contenido de tu página va aquí -->
+
+  <div class="my-carousel-section">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img src="/IMG/IMGCARA2.avif" alt="Juan Pérez">
+            <p class="text-white">"¡El Jardín de Fan de las Orquídeas es increíble! Nunca he visto tantas orquídeas hermosas en un solo lugar." - Juan Pérez</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="/IMG/IMGCARA1.jpg" alt="María González">
+            <p class="text-white">"Me encanta este jardín. Las orquídeas son simplemente impresionantes y el ambiente es muy tranquilo." - María González</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="/IMG/IMGCARA3.jpg" alt="Carlos Rodríguez">
+            <p class="text-white">"Si eres un amante de las orquídeas, este es el lugar para ti. ¡Es un paraíso de orquídeas!" - Carlos Rodríguez</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+<style>
+      .seccion {
+    background-color: #fce7f3;
+    height: 40px;
+}
+</style>
+
+  <div class="seccion"></div>
+
+  <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container">
+      <span class="text-muted">Visitanos en instagram @orquideas</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
